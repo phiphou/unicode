@@ -1,0 +1,45 @@
+{
+  "title": "Visualiseur UTF-8",
+  "description": "Entrez un caractère pour voir sa représentation en UTF-8",
+  "characterInput": {
+    "title": "Caractère à encoder",
+    "placeholder": "Entrez un caractère",
+    "examples": "Exemples :",
+    "hint": "Un seul caractère"
+  },
+  "unicodeInfo": {
+    "title": "Informations Unicode",
+    "character": "Caractère",
+    "codePoint": "Point de code",
+    "decimal": "Décimal",
+    "hexadecimal": "Hexadécimal",
+    "binary": "Binaire"
+  },
+  "utf8BinaryRepresentation": {
+    "title": "Représentation UTF-8 en binaire",
+    "uniqueByte": "Octet unique",
+    "leadByte": "Octet de tête",
+    "continuationByte": "Octet de continuation {{number}}",
+    "legend": {
+      "headerBits": "Bits d'en-tête",
+      "continuationBits": "Bits de continuation",
+      "significantBitsByte": "Bits significatifs (octet {{number}})"
+    }
+  },
+  "significantBitsDisplay": {
+    "title": "Bits significatifs extraits",
+    "description": "Conversion des bits de données en décimal et hexadécimal",
+    "binary": "Binaire",
+    "decimal": "Décimal",
+    "hexadecimal": "Hexadécimal",
+    "summary": "✓ Les bits significatifs ({{count}} bits) représentent le point de code Unicode U+{{codePoint}}"
+  },
+  "binaryToDecimalConversion": {
+    "title": "Conversion binaire → décimal",
+    "description": "Calcul du point de code Unicode à partir des bits significatifs",
+    "step": "Étape {{number}}",
+    "explanation": "Multipliez chaque bit par sa puissance de 2 correspondante",
+    "calculation": "Calcul",
+    "result": "Résultat final"
+  }
+}

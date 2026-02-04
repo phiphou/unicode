@@ -1,0 +1,45 @@
+{
+  "title": "UTF-8 Visualizer",
+  "description": "Enter a character to see its UTF-8 representation",
+  "characterInput": {
+    "title": "Character to encode",
+    "placeholder": "Enter a character",
+    "examples": "Examples:",
+    "hint": "Single character only"
+  },
+  "unicodeInfo": {
+    "title": "Unicode Information",
+    "character": "Character",
+    "codePoint": "Code Point",
+    "decimal": "Decimal",
+    "hexadecimal": "Hexadecimal",
+    "binary": "Binary"
+  },
+  "utf8BinaryRepresentation": {
+    "title": "UTF-8 Binary Representation",
+    "uniqueByte": "Single byte",
+    "leadByte": "Lead byte",
+    "continuationByte": "Continuation byte {{number}}",
+    "legend": {
+      "headerBits": "Header bits",
+      "continuationBits": "Continuation bits",
+      "significantBitsByte": "Significant bits (byte {{number}})"
+    }
+  },
+  "significantBitsDisplay": {
+    "title": "Extracted Significant Bits",
+    "description": "Conversion of data bits to decimal and hexadecimal",
+    "binary": "Binary",
+    "decimal": "Decimal",
+    "hexadecimal": "Hexadecimal",
+    "summary": "✓ The significant bits ({{count}} bits) represent the Unicode code point U+{{codePoint}}"
+  },
+  "binaryToDecimalConversion": {
+    "title": "Binary → Decimal Conversion",
+    "description": "Calculating the Unicode code point from significant bits",
+    "step": "Step {{number}}",
+    "explanation": "Multiply each bit by its corresponding power of 2",
+    "calculation": "Calculation",
+    "result": "Final result"
+  }
+}
