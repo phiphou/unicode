@@ -10,8 +10,8 @@ export default function UnicodeInfo({ utf8Info }: UnicodeInfoProps) {
   const { t } = useTranslation()
 
   return (
-    <Card className="bg-muted/50 py-4">
-      <CardHeader>
+    <Card className="bg-muted/50  py-3 sm:py-3 gap-1 ">
+      <CardHeader className="px-3 sm:px-6 py-0 sm:py-0">
         <CardTitle className="text-xl">{t('unicodeInfo.title')}</CardTitle>
       </CardHeader>
       <CardContent className="space-y-0">

@@ -17,6 +17,8 @@
   },
   "utf8BinaryRepresentation": {
     "title": "Représentation UTF-8 en binaire",
+    "byte_one": "octet",
+    "byte_other": "octets",
     "uniqueByte": "Octet unique",
     "leadByte": "Octet de tête",
     "continuationByte": "Octet de continuation {{number}}",

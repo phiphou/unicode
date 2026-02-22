@@ -21,15 +21,15 @@ export default function SignificantBitsDisplay({
   const significantBitsWithIndex = extractSignificantBitsWithIndex(bitDisplay)
 
   return (
-    <Card className="bg-muted/50">
-      <CardHeader>
+    <Card className="bg-muted/50  py-3 sm:py-3 gap-1 ">
+      <CardHeader className="px-3 sm:px-6 py-0 sm:py-0">
         <CardTitle className="text-xl">{t('significantBitsDisplay.title')}</CardTitle>
         <CardDescription>{t('significantBitsDisplay.description')}</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4.5">
         <div className="space-y-2">
-          <div className="text-sm text-muted-foreground">{t('significantBitsDisplay.binary')}</div>
-          <div className="flex gap-3 flex-wrap">
+          <div className="text-sm text-muted-foreground mt-3">{t('significantBitsDisplay.binary')}</div>
+          <div className="flex gap-2.5 sm:gap-3 flex-wrap">
             {significantBitsWithIndex.map((bit, index) => (
               <div
                 key={index}

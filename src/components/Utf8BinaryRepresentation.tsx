@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { getBitColor, getSignificantBitColor, type BitDisplay, type Utf8Info } from '@/lib/utf8Utils'
 import { useTranslation } from 'react-i18next'
 
@@ -17,20 +17,21 @@ export default function Utf8BinaryRepresentation({ utf8Info, bitDisplay }: Utf8B
   }
 
   return (
-    <Card className="bg-muted/50 py-4 gap-3">
-      <CardHeader>
+    <Card className="bg-muted/50  py-3 sm:py-3 gap-1 ">
+      <CardHeader className="px-3 sm:px-6 py-0 sm:py-0">
         <CardTitle className="text-xl">{t('utf8BinaryRepresentation.title')}</CardTitle>
+        <CardDescription>{utf8Info.utf8Bytes.length} {t('utf8BinaryRepresentation.byte', { count: utf8Info.utf8Bytes.length })}</CardDescription>
       </CardHeader>
-      <CardContent className="space-y-3">
+      <CardContent className="space-y-3 mt-2">
         {bitDisplay.map((byteBits, byteIndex) => (
-          <div key={byteIndex} className="space-y-3 mb-5">
+          <div key={byteIndex} className="space-y-3 mb-5 mt-0">
             <div className="flex items-center justify-between">
               <div className="text-sm font-medium">{getByteLabel(byteIndex, utf8Info.byteCount)}</div>
               <div className="text-sm text-muted-foreground font-mono">
                 0x{utf8Info.utf8Bytes[byteIndex].toString(16).toUpperCase().padStart(2, '0')}
               </div>
             </div>
-            <div className="flex gap-3 flex-wrap">
+            <div className="flex gap-2 sm:gap-3 flex-wrap">
               {byteBits.map((bit, bitIndex) => (
                 <div
                   key={bitIndex}
@@ -43,10 +44,10 @@ export default function Utf8BinaryRepresentation({ utf8Info, bitDisplay }: Utf8B
           </div>
         ))}
 
-        <div className="pt-0">
+        <div className="pt-3.5">
           <div className="flex gap-3 flex-wrap">
             <div className="flex items-center gap-2">
-              <div className="w-4 h-4 bg-blue-500 rounded"></div>
+              <div className="w-4 h-4 bg-red-800 rounded"></div>
               <span className="text-sm">{t('utf8BinaryRepresentation.legend.headerBits')}</span>
             </div>
             <div className="flex items-center gap-2">

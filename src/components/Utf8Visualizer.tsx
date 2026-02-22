@@ -23,15 +23,15 @@ export default function Utf8Visualizer() {
   const significantHex = significantBits ? significantDecimal.toString(16).toUpperCase() : ''
 
   return (
-    <div className="w-full max-w-420 mx-auto p-3">
-      <Card className="mb-6">
-        <CardHeader>
-          <div className="flex items-center justify-between">
+    <div className="w-full sm:max-w-5xl lg:max-w-7xl xl:max-w-327 2xl:max-w-400 mx-auto px-6 p-3">
+      <Card className="mb-6 py-3 sm:py-2.5  ">
+        <CardHeader className="px-3 sm:px-6 py-0 sm:py-0">
+          <div className="flex items-start sm:items-center justify-between">
             <div>
-              <CardTitle className="text-3xl">{t('title')}</CardTitle>
+              <CardTitle className="text-2xl sm:text-3xl mb-3.5 mt-2">{t('title')}</CardTitle>
               <CardDescription>{t('description')}</CardDescription>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-4 sm:gap-6">
               <LanguageToggle />
               <ThemeToggle />
             </div>

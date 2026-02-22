@@ -10,13 +10,13 @@ export default function BinaryToDecimalConversion({ significantBits, significant
   const { t } = useTranslation()
 
   return (
-    <Card className="bg-muted/50">
-      <CardHeader>
+    <Card className="bg-muted/50  py-3 sm:py-3 gap-1 ">
+      <CardHeader className="px-3 sm:px-6 py-0 sm:py-0">
         <CardTitle className="text-xl">{t('binaryToDecimalConversion.title')}</CardTitle>
       </CardHeader>
-      <CardContent className="space-y-4 pt-6">
+      <CardContent className="space-y-4 pt-0 mt-2">
         <div className="font-medium">{t('binaryToDecimalConversion.explanation')}</div>
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto mt-3">
           <div className="inline-flex gap-2">
             {significantBits
               .split('')

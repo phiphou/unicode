@@ -32,8 +32,12 @@ export default function ThemeToggle() {
   }
 
   return (
-    <Button variant="outline" size="icon-lg" onClick={toggleTheme} className="rounded-full" aria-label="Toggle theme">
-      {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
+    <Button variant="ghost" size="icon-lg" onClick={toggleTheme} className="text-amber-400 rounded-full w-5 sm:w-7" aria-label="Toggle theme">
+      {theme === 'light' ? (
+        <Moon className="h-4! w-4! sm:h-5! sm:w-5!" strokeWidth={3} />
+      ) : (
+        <Sun className="h-4! w-4! sm:h-4.5! sm:w-4.5!" strokeWidth={2.5} />
+      )}
     </Button>
   )
 }

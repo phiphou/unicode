@@ -17,6 +17,8 @@
   },
   "utf8BinaryRepresentation": {
     "title": "UTF-8 Binary Representation",
+    "byte_one": "byte",
+    "byte_other": "bytes",
     "uniqueByte": "Single byte",
     "leadByte": "Lead byte",
     "continuationByte": "Continuation byte {{number}}",
